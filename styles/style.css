@@ -1,0 +1,154 @@
+/* --- RESET SIMPLE --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* --- LAYOUT GLOBAL --- */
+body {
+    background: #d9d9d9; /* gris clair comme ta maquette */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Container général à largeur fixe */
+.container {
+    width: 100%;
+    max-width: 1366px; /* taille écran standard */
+    background: #d9d9d9;
+}
+
+/* --- HEADER --- */
+header {
+    width: 100%;
+    background: #b3b3b3; /* gris plus foncé */
+    padding: 10px 0;
+    margin-bottom: 30px;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    list-style: none;
+}
+
+header nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    text-transform: lowercase;
+}
+
+/* --- TITRE DE PAGE --- */
+.titre-page {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+/* --- PAGE ACCUEIL --- */
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    grid-template-rows: auto auto;
+    gap: 40px;
+    width: 100%;
+    max-width: 1366px;
+    margin: 0 auto;
+    padding: 20px 40px 60px;
+}
+
+.info h1 {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.info p {
+    margin-bottom: 10px;
+}
+
+.btn-cv {
+    display: inline-block;
+    background: #004ea8;
+    padding: 10px 25px;
+    color: white;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+/* photo */
+.photo-bloc .photo {
+    width: 250px;
+    height: 250px;
+    background: #cfcfcf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* logo lycée */
+.logo-lycee {
+    width: 120px;
+    height: 120px;
+    background: #cfcfcf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* --- GRILLES GENERALES (PROJETS, COMPETENCES, VEILLE) --- */
+.grille-projets,
+.grille-competences,
+.grille-articles {
+    width: 100%;
+    max-width: 1366px;
+    margin: 0 auto 60px;
+    padding: 0 40px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px 80px;
+}
+
+.projet, .competence, .article {
+    text-align: center;
+}
+
+/* Bloc rouge image */
+.img {
+    width: 150px;
+    height: 150px;
+    background: #d83a3a;
+    margin: 0 auto 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 12px;
+}
+
+/* Texte sous les blocs */
+.competence span,
+.article span {
+    font-size: 12px;
+    color: #333;
+}
+
+/* --- INTRO VEILLE TECHNO --- */
+.intro-veille {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/* --- FOOTER --- */
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 12px 0;
+    background: #b3b3b3;
+    font-size: 12px;
+}
