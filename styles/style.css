@@ -1,154 +1,363 @@
-/* --- RESET SIMPLE --- */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
 }
 
-/* --- LAYOUT GLOBAL --- */
 body {
-    background: #d9d9d9; /* gris clair comme ta maquette */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom right, #1a1a1a, #2d2d2d, #1a1a1a);
+    color: #ffffff;
+    min-height: 100vh;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.9);
+    backdrop-filter: blur(10px);
+    padding: 1rem 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.header-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 2rem;
+}
+
+nav a {
+    color: #999;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffffff;
+}
+
+section {
+    padding: 6rem 2rem 4rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
-}
-
-/* Container général à largeur fixe */
-.container {
-    width: 100%;
-    max-width: 1366px; /* taille écran standard */
-    background: #d9d9d9;
-}
-
-/* --- HEADER --- */
-header {
-    width: 100%;
-    background: #b3b3b3; /* gris plus foncé */
-    padding: 10px 0;
-    margin-bottom: 30px;
-}
-
-header nav ul {
-    display: flex;
     justify-content: center;
-    gap: 60px;
-    list-style: none;
 }
 
-header nav a {
-    text-decoration: none;
-    color: black;
-    font-size: 14px;
-    text-transform: lowercase;
-}
-
-/* --- TITRE DE PAGE --- */
-.titre-page {
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
     text-align: center;
-    font-size: 18px;
-    margin-bottom: 40px;
 }
 
-/* --- PAGE ACCUEIL --- */
-.hero {
-    display: grid;
-    grid-template-columns: 1fr 300px;
-    grid-template-rows: auto auto;
-    gap: 40px;
-    width: 100%;
-    max-width: 1366px;
+#accueil {
+    text-align: center;
+}
+
+.photo-profil {
+    width: 200px;
+    height: 200px;
+    background: #444;
+    border-radius: 15px;
+    margin: 0 auto 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.presentation {
+    max-width: 700px;
     margin: 0 auto;
-    padding: 20px 40px 60px;
 }
 
-.info h1 {
-    font-size: 26px;
-    margin-bottom: 10px;
+.presentation h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
 }
 
-.info p {
-    margin-bottom: 10px;
+.presentation p {
+    font-size: 1.2rem;
+    color: #ccc;
+    line-height: 1.6;
+    margin-bottom: 1rem;
 }
 
-.btn-cv {
+
+.btn-primary {
     display: inline-block;
-    background: #004ea8;
-    padding: 10px 25px;
+    padding: 1rem 2.5rem;
+    background: #2563eb;
     color: white;
     text-decoration: none;
-    margin-top: 15px;
+    border-radius: 50px;
+    margin-top: 2rem;
+    transition: all 0.3s ease;
+    font-weight: 600;
 }
 
-/* photo */
-.photo-bloc .photo {
-    width: 250px;
-    height: 250px;
-    background: #cfcfcf;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.btn-primary:hover {
+    background: #1d4ed8;
+    transform: scale(1.05);
 }
 
-/* logo lycée */
-.logo-lycee {
-    width: 120px;
-    height: 120px;
-    background: #cfcfcf;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
 }
 
-/* --- GRILLES GENERALES (PROJETS, COMPETENCES, VEILLE) --- */
-.grille-projets,
-.grille-competences,
-.grille-articles {
-    width: 100%;
-    max-width: 1366px;
-    margin: 0 auto 60px;
-    padding: 0 40px;
-
+.grid-3 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 60px 80px;
+    gap: 1.5rem;
 }
 
-.projet, .competence, .article {
-    text-align: center;
+.card {
+    background: #2d2d2d;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
 }
 
-/* Bloc rouge image */
-.img {
-    width: 150px;
-    height: 150px;
-    background: #d83a3a;
-    margin: 0 auto 15px;
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.card p {
+    color: #ccc;
+    line-height: 1.6;
+}
+
+.competence-card {
+    background: linear-gradient(135deg, #ef4444, #dc2626);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.competence-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(239, 68, 68, 0.4);
+}
+
+.competence-id {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.competence-titre {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.8rem;
+}
+
+.competence-desc {
+    font-size: 0.9rem;
+    opacity: 0.95;
+}
+
+.projet-card {
+    background: #2d2d2d;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.projet-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+}
+
+.projet-image {
+    background: linear-gradient(135deg, #ef4444, #dc2626);
+    height: 200px;
     display: flex;
-    justify-content: center;
     align-items: center;
-    color: black;
-    font-size: 12px;
+    justify-content: center;
+    font-size: 4rem;
 }
 
-/* Texte sous les blocs */
-.competence span,
-.article span {
-    font-size: 12px;
-    color: #333;
+.projet-content {
+    padding: 1.5rem;
 }
 
-/* --- INTRO VEILLE TECHNO --- */
-.intro-veille {
-    text-align: center;
-    margin-bottom: 60px;
+.projet-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
 }
 
-/* --- FOOTER --- */
+.projet-content p {
+    color: #ccc;
+    margin-bottom: 1rem;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.tag {
+    background: #444;
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+}
+
+.tag-competence {
+    background: #2563eb;
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+.veille-intro {
+    background: #2d2d2d;
+    padding: 2rem;
+    border-radius: 15px;
+    margin-bottom: 3rem;
+    text-align: left;
+}
+
+.veille-intro h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.article-card {
+    background: linear-gradient(135deg, #ef4444, #dc2626);
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.article-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(239, 68, 68, 0.4);
+}
+
+.article-titre {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.article-date {
+    font-size: 0.9rem;
+    opacity: 0.9;
+    margin-bottom: 0.8rem;
+}
+
+.liste-objectifs {
+    list-style: none;
+    margin-top: 1.5rem;
+}
+
+.liste-objectifs li {
+    padding-left: 2rem;
+    margin-bottom: 1rem;
+    position: relative;
+    color: #ccc;
+}
+
+.liste-objectifs li:before {
+    content: "\25B8";
+    position: absolute;
+    left: 0;
+    color: #2563eb;
+    font-size: 1.2rem;
+}
+
+.mission-card {
+    background: #2d2d2d;
+    padding: 1.5rem;
+    border-radius: 15px;
+    margin-bottom: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.mission-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.mission-card h4 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
 footer {
-    width: 100%;
+    background: #000;
+    padding: 2rem;
     text-align: center;
-    padding: 12px 0;
-    background: #b3b3b3;
-    font-size: 12px;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    nav {
+        display: none;
+    }
+    
+    .presentation h1 {
+        font-size: 2.5rem;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+
+    section {
+        padding: 5rem 1rem 3rem;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+section > * {
+    animation: fadeIn 0.8s ease-out;
 }

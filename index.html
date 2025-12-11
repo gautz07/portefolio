@@ -2,43 +2,338 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Accueil</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio BTS SIO - Bardet Gauthier</title>
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <div class="logo">Bardet Gauthier</div>
+            <nav>
+                <a href="#accueil">accueil</a>
+                <a href="#formation">mes informations</a>
+                <a href="#projets">projets réalisés</a>
+                <a href="#competences">mes compétences</a>
+                <a href="#stages">stages</a>
+                <a href="#veille">ma veille techno</a>
+            </nav>
+        </div>
+    </header>
 
-<header>
-    <nav>
-        <ul>
-            <li><a href="index.html">accueil</a></li>
-            <li><a href="pages/competences.html">mes compétences</a></li>
-            <li><a href="pages/projets.html">mes projets réalisés</a></li>
-            <li><a href="pages/veille.html">veille technologique</a></li>
+    <!-- Section Accueil -->
+    <section id="accueil">
+        <div class="photo-profil"></div>
+        <div class="presentation">
+            <h1>Bardet<br>Gauthier</h1>
+            <p style="font-size: 1.3rem; color: #aaa;">Étudiant en deuxième année d'informatique</p>
+            <p>
+                [présentation]
+            </p>
+            <a href="#formation" class="btn-primary">Découvrir mon parcours →</a>
+        </div>
+    </section>
+
+    <!-- Section Formation -->
+    <section id="formation">
+    <h2>Le BTS SIO</h2>
+    
+    <div class="grid-2">
+        <div class="card">
+            <h3>Option SLAM</h3>
+            <p>
+                <strong>Solutions Logicielles et Applications Métiers</strong><br><br>
+                L'option SLAM forme des développeurs capables de concevoir, développer et maintenir des applications informatiques. 
+                Elle couvre la programmation orientée objet, le développement web, les bases de données, ainsi que les méthodes agiles 
+                et la gestion de projets informatiques.
+            </p>
+        </div>
+        
+        <div class="card">
+            <h3>Option SISR</h3>
+            <p>
+                <strong>Solutions d'Infrastructure, Systèmes et Réseaux</strong><br><br>
+                L'option SISR forme des techniciens spécialisés dans l'administration et la sécurisation des infrastructures réseau. 
+                Elle aborde la configuration des serveurs, la gestion des réseaux, la virtualisation, la cybersécurité et 
+                le support technique aux utilisateurs.
+            </p>
+        </div>
+    </div>
+
+    <div class="card" style="margin-top: 2rem;">
+        <h3>Objectifs de la formation</h3>
+        <ul class="liste-objectifs">
+            <li>Former des techniciens supérieurs capables de participer à la production et à la fourniture de services informatiques</li>
+            <li>Développer des compétences en conception, développement, déploiement et maintenance d'applications</li>
+            <li>Maîtriser les outils et méthodologies de gestion de projet (méthodes agiles, Scrum, DevOps)</li>
+            <li>Acquérir une veille technologique pour suivre l'évolution constante du secteur informatique</li>
+            <li>Préparer à l'insertion professionnelle ou à la poursuite d'études (Licence Pro, Master, École d'ingénieurs)</li>
         </ul>
-    </nav>
-</header>
-
-<section class="hero">
-    <div class="info">
-        <h1>Bardet Gauthier</h1>
-        <p>étudiant en deuxième année d'informatique</p>
-        <p class="description">
-            présentation rapide de moi et de mon parcours<br>
-            en quelques lignes de manière succincte
-        </p>
-        <a href="#" class="btn-cv">CV</a>
     </div>
-
-    <div class="photo-bloc">
-        <div class="photo">photo</div>
-    </div>
-
-    <div class="logo-lycee">logo du lycée</div>
 </section>
 
-<footer>
-    email · profil linkedin · numéro de téléphone
-</footer>
+    <!-- Section Compétences -->
+ <section id="competences">
+    <h2>Mes compétences</h2>
+    <p style="text-align: center; color: #999; margin-bottom: 3rem;">Les 6 compétences du référentiel E5</p>
+    
+    <div class="grid-3">
+        <div class="competence-card">
+            <div class="competence-id">C1</div>
+            <div class="competence-titre">Gérer le patrimoine informatique</div>
+            <div class="competence-desc">Recenser et identifier les ressources numériques et les ressources humaines mobilisées pour leur évolution et leur exploitation.</div>
+        </div>
 
+        <div class="competence-card">
+            <div class="competence-id">C2</div>
+            <div class="competence-titre">Répondre aux incidents et aux demandes d'assistance et d'évolution</div>
+            <div class="competence-desc">Collecter, suivre et orienter les demandes d'assistance et d'évolution en respectant les niveaux de service et de délai.</div>
+        </div>
+
+        <div class="competence-card">
+            <div class="competence-id">C3</div>
+            <div class="competence-titre">Développer la présence en ligne de l'organisation</div>
+            <div class="competence-desc">Participer à la valorisation de l'image de l'organisation sur les médias numériques en respectant sa stratégie.</div>
+        </div>
+
+        <div class="competence-card">
+            <div class="competence-id">C4</div>
+            <div class="competence-titre">Travailler en mode projet</div>
+            <div class="competence-desc">Analyser les objectifs et les modalités d'organisation d'un projet pour planifier les activités.</div>
+        </div>
+
+        <div class="competence-card">
+            <div class="competence-id">C5</div>
+            <div class="competence-titre">Mettre à disposition des utilisateurs un service informatique</div>
+            <div class="competence-desc">Réaliser les tests d'intégration et d'acceptation d'un service pour garantir sa qualité et sa conformité.</div>
+        </div>
+
+        <div class="competence-card">
+            <div class="competence-id">C6</div>
+            <div class="competence-titre">Organiser son développement professionnel</div>
+            <div class="competence-desc">Mettre en place son environnement d'apprentissage personnel pour actualiser ses compétences et suivre les évolutions technologiques.</div>
+        </div>
+    </div>
+</section>
+
+    <!-- Section Projets -->
+    <section id="projets">
+        <h2>Mes projets réalisés</h2>
+        
+        <div class="grid-2">
+            <!-- Projet 1 -->
+            <div class="projet-card">
+                <div class="projet-image"></div>
+                <div class="projet-content">
+                    <h3>Projet 1 - [Nom du projet]</h3>
+                    <p>[Description du contexte et objectifs]</p>
+                    
+                    <h4 style="font-size: 0.9rem; color: #999; margin-bottom: 0.5rem;">Technologies</h4>
+                    <div class="tags">
+                        <span class="tag">[Techno 1]</span>
+                        <span class="tag">[Techno 2]</span>
+                        <span class="tag">[Techno 3]</span>
+                    </div>
+                    
+                    <h4 style="font-size: 0.9rem; color: #999; margin-bottom: 0.5rem;">Compétences mobilisées</h4>
+                    <div class="tags">
+                        <span class="tag-competence">C?</span>
+                        <span class="tag-competence">C?</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projet 2 -->
+            <div class="projet-card">
+                <div class="projet-image"></div>
+                <div class="projet-content">
+                    <h3>Projet 2 - [Nom du projet]</h3>
+                    <p>[Description du contexte et objectifs]</p>
+                    
+                    <h4 style="font-size: 0.9rem; color: #999; margin-bottom: 0.5rem;">Technologies</h4>
+                    <div class="tags">
+                        <span class="tag">[Techno 1]</span>
+                        <span class="tag">[Techno 2]</span>
+                    </div>
+                    
+                    <h4 style="font-size: 0.9rem; color: #999; margin-bottom: 0.5rem;">Compétences mobilisées</h4>
+                    <div class="tags">
+                        <span class="tag-competence">C?</span>
+                        <span class="tag-competence">C?</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projet 3 -->
+            <div class="projet-card">
+                <div class="projet-image"></div>
+                <div class="projet-content">
+                    <h3>Projet 3 - [Nom du projet]</h3>
+                    <p>[Description du contexte et objectifs]</p>
+                    
+                    <h4 style="font-size: 0.9rem; color: #999; margin-bottom: 0.5rem;">Technologies</h4>
+                    <div class="tags">
+                        <span class="tag">[Techno 1]</span>
+                        <span class="tag">[Techno 2]</span>
+                    </div>
+                    
+                    <h4 style="font-size: 0.9rem; color: #999; margin-bottom: 0.5rem;">Compétences mobilisées</h4>
+                    <div class="tags">
+                        <span class="tag-competence">C?</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projet 4 -->
+            <div class="projet-card">
+                <div class="projet-image"></div>
+                <div class="projet-content">
+                    <h3>Projet 4 - [Nom du projet]</h3>
+                    <p>[Description du contexte et objectifs]</p>
+                    
+                    <h4 style="font-size: 0.9rem; color: #999; margin-bottom: 0.5rem;">Technologies</h4>
+                    <div class="tags">
+                        <span class="tag">[Techno 1]</span>
+                        <span class="tag">[Techno 2]</span>
+                    </div>
+                    
+                    <h4 style="font-size: 0.9rem; color: #999; margin-bottom: 0.5rem;">Compétences mobilisées</h4>
+                    <div class="tags">
+                        <span class="tag-competence">C?</span>
+                        <span class="tag-competence">C?</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Stages -->
+    <section id="stages">
+        <h2>Stages</h2>
+        
+        <div class="card" style="margin-bottom: 2rem;">
+            <h3>Entreprise d'accueil</h3>
+            <p style="margin-bottom: 1rem;">
+                Excelvision est un laboratoire pharmaceutique spécialisé dans le développement et la fabrication de produits de santé. 
+                L’entreprise conçoit différentes solutions destinées aux besoins courants de soins et de bien-être, en mettant l’accent sur 
+                la qualité et la conformité aux normes. Sa gamme de produits couvre plusieurs usages, accompagnée d’informations sur 
+                leurs caractéristiques et modes d’emploi.
+            </p>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
+                <div><strong>Secteur :</strong> pharmaceutique</div>
+                <div><strong>Durée :</strong> 7 semaines</div>
+            </div>
+        </div>
+
+        <!-- Mission 1 -->
+        <div class="mission-card">
+            <h4>Mission 1 - [Titre de la mission]</h4>
+            <p style="color: #ccc; margin-bottom: 1rem;">
+                [Contexte, objectifs et travail réalisé]
+            </p>
+            <div class="tags" style="margin-bottom: 0.8rem;">
+                <span class="tag-competence">C?</span>
+                <span class="tag-competence">C?</span>
+            </div>
+            <p style="font-size: 0.9rem; color: #999;">Technologies: [Liste des technologies]</p>
+        </div>
+
+        <!-- Mission 2 -->
+        <div class="mission-card">
+            <h4>Mission 2 - [Titre de la mission]</h4>
+            <p style="color: #ccc; margin-bottom: 1rem;">
+                [Contexte, objectifs et travail réalisé]
+            </p>
+            <div class="tags" style="margin-bottom: 0.8rem;">
+                <span class="tag-competence">C?</span>
+                <span class="tag-competence">C?</span>
+            </div>
+            <p style="font-size: 0.9rem; color: #999;">Technologies: [Liste des technologies]</p>
+        </div>
+
+        <!-- Mission 3 -->
+        <div class="mission-card">
+            <h4>Mission 3 - [Titre de la mission]</h4>
+            <p style="color: #ccc; margin-bottom: 1rem;">
+                [Contexte, objectifs et travail réalisé]
+            </p>
+            <div class="tags" style="margin-bottom: 0.8rem;">
+                <span class="tag-competence">C?</span>
+                <span class="tag-competence">C?</span>
+            </div>
+            <p style="font-size: 0.9rm; color: #999;">Technologies: [Liste des technologies]</p>
+        </div>
+    </section>
+
+    <!-- Section Veille -->
+    <section id="veille">
+        <h2>Ma veille techno</h2>
+        <p style="text-align: center; color: #999; margin-bottom: 3rem;">
+            Présentation du sujet et état de l'art au début de la veille
+        </p>
+        
+        <div class="veille-intro">
+            <h3>Thématique: La blockchain</h3>
+            <p style="color: #ccc;">
+                [État de l'art initial et contexte de la recherche]
+            </p>
+        </div>
+
+        <div class="grid-3">
+            <!-- Article 1 -->
+            <div class="article-card">
+                <div class="article-titre">[Titre de l'article]</div>
+                <div class="article-date">[Date]</div>
+                <p style="font-size: 0.9rem; margin-bottom: 0.5rem;"><strong>Thème:</strong> [Thème]</p>
+                <p style="font-size: 0.85rem; opacity: 0.85;">[Résumé court de l'article]</p>
+            </div>
+
+            <!-- Article 2 -->
+            <div class="article-card">
+                <div class="article-titre">[Titre de l'article]</div>
+                <div class="article-date">[Date]</div>
+                <p style="font-size: 0.9rem; margin-bottom: 0.5rem;"><strong>Thème:</strong> [Thème]</p>
+                <p style="font-size: 0.85rem; opacity: 0.85;">[Résumé court de l'article]</p>
+            </div>
+
+            <!-- Article 3 -->
+            <div class="article-card">
+                <div class="article-titre">[Titre de l'article]</div>
+                <div class="article-date">[Date]</div>
+                <p style="font-size: 0.9rem; margin-bottom: 0.5rem;"><strong>Thème:</strong> [Thème]</p>
+                <p style="font-size: 0.85rem; opacity: 0.85;">[Résumé court de l'article]</p>
+            </div>
+
+            <!-- Article 4 -->
+            <div class="article-card">
+                <div class="article-titre">[Titre de l'article]</div>
+                <div class="article-date">[Date]</div>
+                <p style="font-size: 0.9rem; margin-bottom: 0.5rem;"><strong>Thème:</strong> [Thème]</p>
+                <p style="font-size: 0.85rem; opacity: 0.85;">[Résumé court de l'article]</p>
+            </div>
+
+            <!-- Article 5 -->
+            <div class="article-card">
+                <div class="article-titre">[Titre de l'article]</div>
+                <div class="article-date">[Date]</div>
+                <p style="font-size: 0.9rem; margin-bottom: 0.5rem;"><strong>Thème:</strong> [Thème]</p>
+                <p style="font-size: 0.85rem; opacity: 0.85;">[Résumé court de l'article]</p>
+            </div>
+
+            <!-- Article 6 -->
+            <div class="article-card">
+                <div class="article-titre">[Titre de l'article]</div>
+                <div class="article-date">[Date]</div>
+                <p style="font-size: 0.9rem; margin-bottom: 0.5rem;"><strong>Thème:</strong> [Thème]</p>
+                <p style="font-size: 0.85rem; opacity: 0.85;">[Résumé court de l'article]</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Email : bardetgauthier@gmail.com</p>
+    </footer>
 </body>
 </html>
