@@ -1,3 +1,7 @@
+/* ========================
+   STYLES EXISTANTS
+======================== */
+
 * {
     margin: 0;
     padding: 0;
@@ -108,7 +112,6 @@ h2 {
     line-height: 1.6;
     margin-bottom: 1rem;
 }
-
 
 .btn-primary {
     display: inline-block;
@@ -342,6 +345,197 @@ footer {
     font-size: 0.9rem;
 }
 
+.back-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.8rem 1.5rem;
+    background: #2563eb;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    margin-bottom: 2rem;
+}
+
+.back-button:hover {
+    background: #1d4ed8;
+    transform: translateX(-5px);
+}
+
+.projet-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.projet-detail {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 6rem 2rem 4rem;
+}
+
+.projet-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.projet-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.projet-banner {
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(135deg, #ef4444, #dc2626);
+    border-radius: 15px;
+    margin-bottom: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 6rem;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.section-detail {
+    background: #2d2d2d;
+    padding: 2rem;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.section-detail h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #fff;
+    border-bottom: 2px solid #ef4444;
+    padding-bottom: 0.5rem;
+}
+
+.section-detail h3 {
+    font-size: 1.3rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.section-detail p {
+    color: #ccc;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.section-detail ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.section-detail ul li {
+    padding-left: 2rem;
+    margin-bottom: 0.8rem;
+    position: relative;
+    color: #ccc;
+}
+
+.section-detail ul li:before {
+    content: "\25B8";
+    position: absolute;
+    left: 0;
+    color: #ef4444;
+    font-size: 1.2rem;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.info-box {
+    background: #1a1a1a;
+    padding: 1.5rem;
+    border-radius: 10px;
+    border-left: 4px solid #ef4444;
+}
+
+.info-box h4 {
+    font-size: 0.9rem;
+    color: #999;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.info-box p {
+    color: #fff;
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+.screenshots {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.screenshot-placeholder {
+    background: #1a1a1a;
+    height: 250px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    font-size: 3rem;
+    border: 2px dashed #444;
+}
+
+.difficulty-box {
+    background: #3b1f1f;
+    border-left: 4px solid #ef4444;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.difficulty-box h4 {
+    color: #ef4444;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.difficulty-box p {
+    color: #ccc;
+    margin: 0;
+}
+
+.solution-box {
+    background: #1f3b1f;
+    border-left: 4px solid #22c55e;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.solution-box h4 {
+    color: #22c55e;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.solution-box p {
+    color: #ccc;
+    margin: 0;
+}
+
+/* ========================
+   MEDIA QUERIES
+======================== */
+
 @media (max-width: 768px) {
     nav {
         display: none;
@@ -360,6 +554,7 @@ footer {
     }
 }
 
+/* Animation */
 @keyframes fadeIn {
     from {
         opacity: 0;

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mission de Stage - Déploiement Logiciels | Portfolio BTS SIO</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">Bardet Gauthier</div>
+            <nav>
+                <a href="../index.html">accueil</a>
+                <a href="../index.html#formation">mes informations</a>
+                <a href="../index.html#projets">projets réalisés</a>
+                <a href="../index.html#competences">mes compétences</a>
+                <a href="../index.html#stages">stages</a>
+                <a href="../index.html#veille">ma veille techno</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="projet-detail">
+        <a href="../index.html#stages" class="back-button">← Retour aux stages</a>
+
+        <div class="projet-header">
+            <h1>Mission de Stage – Automatisation du Déploiement Logiciel</h1>
+            <div class="tags" style="justify-content: center; margin-top: 1rem;">
+                <span class="tag-competence">C3</span>
+                <span class="tag-competence">C4</span>
+                <span class="tag-competence">C5</span>
+            </div>
+        </div>
+
+        <!-- 1. Contexte -->
+        <div class="section-detail">
+            <h2>1. Contexte</h2>
+            <p>
+                Lors de mon arrivée en entreprise, le système de déploiement logiciel utilisé était devenu trop lent et limitant.
+                En effet, les techniciens devaient installer manuellement les logiciels sur chaque poste un par un, car l’outil
+                de déploiement utilisé devait être installé localement sur chaque machine avant de pouvoir déployer un logiciel.
+                Cela entraînait une perte de temps considérable et rendait impossible le déploiement à grande échelle.
+            </p>
+
+            <div class="info-grid">
+                <div class="info-box">
+                    <h4>Type de mission</h4>
+                    <p>Mission en entreprise (stage)</p>
+                </div>
+                <div class="info-box">
+                    <h4>Durée</h4>
+                    <p>Durée du stage</p>
+                </div>
+                <div class="info-box">
+                    <h4>Équipe</h4>
+                    <p>Encadré par l’équipe informatique</p>
+                </div>
+                <div class="info-box">
+                    <h4>Environnement</h4>
+                    <p>Administration systèmes | Scripting</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2. Objectifs -->
+        <div class="section-detail">
+            <h2>2. Objectifs</h2>
+            <p>La mission avait pour objectif principal de moderniser et automatiser le déploiement logiciel :</p>
+            <ul>
+                <li>Automatiser l’installation des logiciels via des scripts PowerShell</li>
+                <li>Remplacer le déploiement manuel poste par poste</li>
+                <li>Créer des packages d’installation réutilisables et déployables à grande échelle</li>
+                <li>Faciliter les mises à jour importantes, comme le passage de Windows 10 à Windows 11</li>
+                <li>Réduire la charge de travail des équipes techniques</li>
+                <li>Standardiser les installations pour éviter les erreurs humaines</li>
+            </ul>
+        </div>
+
+        <!-- 3. Travail réalisé -->
+        <div class="section-detail">
+            <h2>3. Travail réalisé</h2>
+
+            <h3>Analyse et compréhension du système existant</h3>
+            <p>
+                J’ai commencé par analyser le fonctionnement de leur ancien système de déploiement afin de comprendre ses limites.
+                Le fait que l’outil soit installé manuellement sur chaque poste empêchait toute automatisation globale.
+            </p>
+
+            <h3>Création de scripts PowerShell d’automatisation</h3>
+            <p>
+                J’ai développé plusieurs scripts PowerShell permettant d’installer automatiquement un logiciel donné sans intervention humaine.
+                Ces scripts prenaient en charge :
+            </p>
+            <ul>
+                <li>Le téléchargement du logiciel ou du package</li>
+                <li>L’installation silencieuse</li>
+                <li>La vérification de la version installée</li>
+                <li>L’enregistrement de logs pour suivant le déroulement du déploiement</li>
+            </ul>
+
+            <h3>Création de packages de déploiement</h3>
+            <p>
+                J’ai regroupé ces scripts et les dépendances nécessaires dans des packages prêt à l’emploi afin qu’ils puissent être
+                déployés sur un grand nombre de postes à la fois.
+            </p>
+
+            <h3>Déploiements à grande échelle</h3>
+            <p>
+                Grâce aux scripts et aux packages, il est devenu possible pour l’entreprise de déployer automatiquement :
+            </p>
+            <ul>
+                <li>des logiciels métier internes,</li>
+                <li>des outils bureautiques,</li>
+                <li>des mises à jour système majeures comme le passage de Windows 10 à Windows 11.</li>
+            </ul>
+
+            <h3>Méthodologie</h3>
+            <p>
+                J’ai travaillé en échange régulier avec les techniciens afin d’ajuster les scripts aux besoins.  
+                La version finale a été validée après plusieurs tests internes.
+            </p>
+        </div>
+
+        <!-- 4. Outils et technologies -->
+        <div class="section-detail">
+            <h2>4. Outils et technologies utilisés</h2>
+
+            <h3>Langages</h3>
+            <div class="tags" style="margin-bottom: 1.5rem;">
+                <span class="tag">PowerShell</span>
+                <span class="tag">Batch</span>
+            </div>
+
+            <h3>Outils de déploiement</h3>
+            <div class="tags" style="margin-bottom: 1.5rem;">
+                <span class="tag">Scripts automatisés</span>
+                <span class="tag">Packages personnalisés</span>
+            </div>
+
+            <h3>Environnement</h3>
+            <div class="tags" style="margin-bottom: 1.5rem;">
+                <span class="tag">Windows 10 / Windows 11</span>
+            </div>
+
+            <h3>Outils de développement</h3>
+            <div class="tags">
+                <span class="tag">PowerShell ISE</span>
+                <span class="tag">Visual Studio Code</span>
+                <span class="tag">Git</span>
+            </div>
+        </div>
+
+        <!-- 5. Compétences mobilisées -->
+        <div class="section-detail">
+            <h2>5. Compétences mobilisées</h2>
+
+            <div class="info-box" style="margin-bottom: 1rem;">
+                <h4>C3 - Administrer les systèmes informatiques</h4>
+                <p>Création d’automatisations, compréhension des environnements Windows, scripting professionnel</p>
+            </div>
+
+            <div class="info-box" style="margin-bottom: 1rem;">
+                <h4>C4 - Travailler en mode projet</h4>
+                <p>Analyse du besoin, planification, communication avec l’équipe informatique</p>
+            </div>
+
+            <div class="info-box">
+                <h4>C5 - Mettre à disposition des utilisateurs un service informatique</h4>
+                <p>Déploiements automatisés fiables, documentation technique, tests et validation</p>
+            </div>
+        </div>
+
+        <a href="../index.html#stages" class="back-button" style="margin-top: 2rem;">← Retour aux stages</a>
+    </div>
+
+    <footer>
+        <p>accueil / projets réalisés / missions de stage(s)</p>
+    </footer>
+</body>
+</html>
